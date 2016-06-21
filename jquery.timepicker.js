@@ -436,8 +436,11 @@
 		} else {
 			list = $('<ul />', { 'class': 'ui-timepicker-list' });
 
+            var contained_list = $('<div />', {'class': 'ui-timepicker-list-container'});
+            contained_list.append(list);
+
 			var wrapped_list = $('<div />', { 'class': 'ui-timepicker-wrapper', 'tabindex': -1 });
-			wrapped_list.css({'display':'none', 'position': 'absolute' }).append(list);
+			wrapped_list.css({'display':'none', 'position': 'absolute' }).append(contained_list);
 		}
 
 		if (settings.noneOption) {

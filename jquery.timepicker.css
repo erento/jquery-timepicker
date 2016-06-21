@@ -1,5 +1,16 @@
+.ui-timepicker-list-container {
+  overflow-y:scroll;
+  height: 147px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-sizing: content-box;
+}
+
 .ui-timepicker-wrapper {
-	overflow-y: auto;
+	overflow: visible;
 	height: 150px;
 	width: 6.5em;
 	background: #fff;
@@ -10,6 +21,7 @@
 	outline: none;
 	z-index: 10001;
 	margin: 0;
+  padding: 1px;
 }
 
 .ui-timepicker-wrapper.ui-timepicker-with-duration {
